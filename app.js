@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://soundrex.netlify.app",
+      "https://antara-web.netlify.app",
       "https://master--soundrex.netlify.app",
     ],
     credentials: true,
