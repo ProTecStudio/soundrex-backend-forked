@@ -47,7 +47,7 @@ app.use((error, req, res, next) => {
 deleteCacheCron();
 
 mongoose
-  .connect(process.env.MONGODB_SERVER)
+  .connect(process.env.MONGODB_SERVER || "mongodb://localhost:27017/soundrex")
   .then(() => {
     app.listen(PORT, () => {
       console.log("starting server");
